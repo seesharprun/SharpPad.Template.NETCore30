@@ -3,10 +3,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using SharpPad;
 
-public class Program
+namespace Template
 {
-    public static async Task Main(string[] args)
+    public class Program
     {
-        await "Hello World".Dump();
+        public static async Task Main(string[] args)
+        {
+            await "Hello World".Dump();
+        }
     }
 }
