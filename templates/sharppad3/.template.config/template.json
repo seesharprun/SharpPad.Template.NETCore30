@@ -1,0 +1,10 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Sidney Andrews",
+    "classifications": [ "Console", "Development" ],
+    "identity": "SharpPad.Template.NETCore30",
+    "name": "SharpPad Template (.NET Core 3.0)",
+    "shortName": "sharppad3",
+	"sourceName": "Template",
+	"preferNameDirectory": true
+}

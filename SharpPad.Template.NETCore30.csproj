@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.2.0</PackageVersion>
+    <PackageId>SharpPad.Template.NETCore30</PackageId>
+    <Title>SharpPad Template (.NET Core 3.0)</Title>
+    <Authors>Me</Authors>
+    <Company />
+    <Product />
+    <Description>Template for SharpPad project using .NET Core 3.0.</Description>
+    <Copyright>2019 Sidney Andrews</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/seesharprun/SharpPad.Template.NETCore30</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/seesharprun/SharpPad.Template.NETCore30.git</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>dotnet-new;templates;sharppad</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+</Project>
