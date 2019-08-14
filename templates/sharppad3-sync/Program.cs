@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Linq;
+using System.Threading.Tasks;
 using SharpPad;
 
 namespace Template
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
-            "Hello World".DumpBlocking();
+            await "Hello World".Dump();
         }
     }
 }
